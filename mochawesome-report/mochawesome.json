@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-24T03:19:49.743Z",
+    "end": "2025-02-24T03:19:54.795Z",
+    "duration": 5052,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33c5cacc-8380-45cb-82e2-34bf0f9bd6ef",
+      "title": "",
+      "fullFile": "cypress/e2e/webportal.cy.js",
+      "file": "cypress/e2e/webportal.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eb00ca12-af1a-4e49-b6a0-9f17e9afe408",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Etax login",
+              "fullTitle": "template spec Etax login",
+              "timedOut": null,
+              "duration": 5013,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit(\"https://example.cypress.io\");\ncy.visit(\"/\");\ncy.contains(\"เข้าสู่ระบบ\").click();\n// username\ncy.get(`#input-19`).type(\"toonjirawat\");\n// password\ncy.get(`input[type=\"password\"]`).type(\"n12345678\", {\n  force: true\n});\n// tax id\ncy.get(`#input-24`).type(\"0105551019496\");\n// check box\ncy.get(`[type=\"checkbox\"]`).check({\n  force: true\n});\ncy.get(`[type=\"button\"]`).contains(\"เข้าสู่ระบบ\").click();",
+              "err": {},
+              "uuid": "0a2e5ed4-cb6d-4535-bade-5cf81f1aaef3",
+              "parentUUID": "eb00ca12-af1a-4e49-b6a0-9f17e9afe408",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a2e5ed4-cb6d-4535-bade-5cf81f1aaef3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5013,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
